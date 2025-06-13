@@ -8,97 +8,97 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 0 0% 0%;
+    --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 0%;
+    --card-foreground: 222.2 84% 4.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 0%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 326 67% 58%;
+    --primary: 38 92% 38%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96%;
-    --secondary-foreground: 0 0% 0%;
+    --secondary-foreground: 222.2 84% 4.9%;
 
     --muted: 210 40% 96%;
-    --muted-foreground: 215.4 16.3% 35%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
     --accent: 210 40% 96%;
-    --accent-foreground: 0 0% 0%;
+    --accent-foreground: 222.2 84% 4.9%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 326 67% 58%;
+    --ring: 38 92% 38%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 0 0% 0%;
-    --sidebar-primary: 326 67% 58%;
+    --sidebar-foreground: 222.2 84% 4.9%;
+    --sidebar-primary: 38 92% 38%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 210 40% 96%;
-    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-accent-foreground: 222.2 84% 4.9%;
     --sidebar-border: 214.3 31.8% 91.4%;
-    --sidebar-ring: 326 67% 58%;
+    --sidebar-ring: 38 92% 38%;
 
     /* Plemuz Custom Colors */
-    --plemuz-pink: #d061c2;
+    --plemuz-pink: #bd7f04;
     --plemuz-dark: #0a0a16;
     --plemuz-white: #ffffff;
     --plemuz-black: #000000;
     
-    /* Purple Gradient Colors */
-    --chrysler-blue: #3B2AC0;
-    --persian-blue: #432DB9;
-    --persian-blue-2: #4B2FB2;
-    --rebecca-purple: #5432AB;
-    --rebecca-purple-2: #5C34A3;
-    --rebecca-purple-3: #64379C;
-    --rebecca-purple-4: #6C3995;
+    /* Updated Gradient Colors */
+    --chrysler-blue: #bd7f04;
+    --persian-blue: #c5870c;
+    --persian-blue-2: #cd8f14;
+    --rebecca-purple: #d5971c;
+    --rebecca-purple-2: #dd9f24;
+    --rebecca-purple-3: #e5a72c;
+    --rebecca-purple-4: #edaf34;
   }
 
   .dark {
-    --background: 252 100% 3%;
-    --foreground: 0 0% 100%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
 
-    --card: 252 100% 3%;
-    --card-foreground: 0 0% 100%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 252 100% 3%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 326 67% 58%;
-    --primary-foreground: 252 100% 3%;
+    --primary: 38 92% 38%;
+    --primary-foreground: 222.2 84% 4.9%;
 
-    --secondary: 252 50% 8%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 252 50% 8%;
+    --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 252 50% 8%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 252 50% 8%;
-    --input: 252 50% 8%;
-    --ring: 326 67% 58%;
+    --border: 217.2 32.6%  17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 38 92% 38%;
 
-    --sidebar-background: 252 100% 3%;
-    --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 326 67% 58%;
-    --sidebar-primary-foreground: 252 100% 3%;
-    --sidebar-accent: 252 50% 8%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 252 50% 8%;
-    --sidebar-ring: 326 67% 58%;
+    --sidebar-background: 222.2 84% 4.9%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 38 92% 38%;
+    --sidebar-primary-foreground: 222.2 84% 4.9%;
+    --sidebar-accent: 217.2 32.6% 17.5%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217.2 32.6% 17.5%;
+    --sidebar-ring: 38 92% 38%;
   }
 }
 

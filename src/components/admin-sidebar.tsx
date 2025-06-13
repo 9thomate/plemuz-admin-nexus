@@ -137,17 +137,17 @@ export function AdminSidebar() {
   const isActive = (path: string) => currentPath === path
 
   const getNavCls = ({ isActive }: { isActive: boolean }) =>
-    `w-full justify-start transition-colors ${
+    `w-full justify-start transition-colors text-sidebar-foreground ${
       isActive 
-        ? "bg-primary text-primary-foreground font-medium" 
-        : "hover:bg-accent hover:text-accent-foreground"
+        ? "bg-sidebar-primary text-sidebar-primary-foreground font-medium" 
+        : "hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
     }`
 
   return (
     <Sidebar className={collapsed ? "w-16" : "w-64"} collapsible="icon">
       <SidebarContent className="gap-0">
         {/* Logo Section */}
-        <div className="p-4 border-b border-border">
+        <div className="p-4 border-b border-sidebar-border">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
               <img 
@@ -169,7 +169,7 @@ export function AdminSidebar() {
         {Object.entries(groupedItems).map(([groupName, items]) => (
           <SidebarGroup key={groupName}>
             {!collapsed && (
-              <SidebarGroupLabel className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+              <SidebarGroupLabel className="text-xs font-semibold text-sidebar-foreground/70 uppercase tracking-wider">
                 {groupName}
               </SidebarGroupLabel>
             )}
@@ -185,7 +185,7 @@ export function AdminSidebar() {
                         title={collapsed ? item.title : undefined}
                       >
                         <item.icon className="h-4 w-4 shrink-0" />
-                        {!collapsed && <span>{item.title}</span>}
+                        {!collapsed && <span className="text-sidebar-foreground">{item.title}</span>}
                       </NavLink>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
@@ -196,29 +196,29 @@ export function AdminSidebar() {
         ))}
 
         {/* Theme Toggle */}
-        <div className="mt-auto p-4 border-t border-border">
+        <div className="mt-auto p-4 border-t border-sidebar-border">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button 
                 variant="outline" 
                 size={collapsed ? "icon" : "default"}
-                className="w-full"
+                className="w-full border-sidebar-border bg-sidebar-background text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
               >
                 <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
                 <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                {!collapsed && <span className="ml-2">Theme</span>}
+                {!collapsed && <span className="ml-2 text-sidebar-foreground">Theme</span>}
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              <DropdownMenuItem onClick={() => setTheme("light")}>
+            <DropdownMenuContent align="end" className="bg-popover border-border">
+              <DropdownMenuItem onClick={() => setTheme("light")} className="text-popover-foreground hover:bg-accent hover:text-accent-foreground">
                 <Sun className="mr-2 h-4 w-4" />
                 <span>Light</span>
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setTheme("dark")}>
+              <DropdownMenuItem onClick={() => setTheme("dark")} className="text-popover-foreground hover:bg-accent hover:text-accent-foreground">
                 <Moon className="mr-2 h-4 w-4" />
                 <span>Dark</span>
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setTheme("system")}>
+              <DropdownMenuItem onClick={() => setTheme("system")} className="text-popover-foreground hover:bg-accent hover:text-accent-foreground">
                 <Monitor className="mr-2 h-4 w-4" />
                 <span>System</span>
               </DropdownMenuItem>

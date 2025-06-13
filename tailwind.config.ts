@@ -67,7 +67,7 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				// Plemuz brand colors
-				'plemuz-pink': '#d061c2',
+				'plemuz-pink': '#bd7f04',
 				'plemuz-dark': '#0a0a16',
 				'plemuz-white': '#ffffff',
 				'plemuz-black': '#000000',
