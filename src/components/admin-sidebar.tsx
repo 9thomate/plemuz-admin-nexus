@@ -127,10 +127,12 @@ const groupedItems = menuItems.reduce((acc, item) => {
 }, {} as Record<string, typeof menuItems>)
 
 export function AdminSidebar() {
-  const { collapsed } = useSidebar()
+  const { state } = useSidebar()
   const location = useLocation()
   const { setTheme, theme } = useTheme()
   const currentPath = location.pathname
+  
+  const collapsed = state === "collapsed"
 
   const isActive = (path: string) => currentPath === path
 
@@ -142,7 +144,7 @@ export function AdminSidebar() {
     }`
 
   return (
-    <Sidebar className={collapsed ? "w-16" : "w-64"} collapsible>
+    <Sidebar className={collapsed ? "w-16" : "w-64"} collapsible="icon">
       <SidebarContent className="gap-0">
         {/* Logo Section */}
         <div className="p-4 border-b border-border">
