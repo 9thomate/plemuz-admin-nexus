@@ -10,6 +10,8 @@ import { AdminSidebar } from "@/components/admin-sidebar";
 import { AdminHeader } from "@/components/admin-header";
 import Index from "./pages/Index";
 import Users from "./pages/Users";
+import ContentManagement from "./pages/ContentManagement";
+import Subscriptions from "./pages/Subscriptions";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,17 +32,17 @@ const App = () => (
                   <Routes>
                     <Route path="/" element={<Index />} />
                     <Route path="/users" element={<Users />} />
+                    <Route path="/content" element={<ContentManagement />} />
+                    <Route path="/subscriptions" element={<Subscriptions />} />
                     {/* Placeholder routes for other sections */}
-                    <Route path="/content" element={<div className="p-6"><h1 className="text-2xl font-bold">Content Management - Coming Soon</h1></div>} />
-                    <Route path="/analytics" element={<div className="p-6"><h1 className="text-2xl font-bold">Analytics - Coming Soon</h1></div>} />
-                    <Route path="/financial" element={<div className="p-6"><h1 className="text-2xl font-bold">Financial Management - Coming Soon</h1></div>} />
-                    <Route path="/subscriptions" element={<div className="p-6"><h1 className="text-2xl font-bold">Subscriptions - Coming Soon</h1></div>} />
-                    <Route path="/system" element={<div className="p-6"><h1 className="text-2xl font-bold">System Administration - Coming Soon</h1></div>} />
-                    <Route path="/moderation" element={<div className="p-6"><h1 className="text-2xl font-bold">Content Moderation - Coming Soon</h1></div>} />
-                    <Route path="/security" element={<div className="p-6"><h1 className="text-2xl font-bold">Security - Coming Soon</h1></div>} />
-                    <Route path="/support" element={<div className="p-6"><h1 className="text-2xl font-bold">Support - Coming Soon</h1></div>} />
-                    <Route path="/data" element={<div className="p-6"><h1 className="text-2xl font-bold">Data Management - Coming Soon</h1></div>} />
-                    <Route path="/integrations" element={<div className="p-6"><h1 className="text-2xl font-bold">API & Integration - Coming Soon</h1></div>} />
+                    <Route path="/analytics" element={<div className="p-6"><h1 className="text-2xl font-bold text-foreground">Analytics - Coming Soon</h1></div>} />
+                    <Route path="/financial" element={<div className="p-6"><h1 className="text-2xl font-bold text-foreground">Financial Management - Coming Soon</h1></div>} />
+                    <Route path="/system" element={<div className="p-6"><h1 className="text-2xl font-bold text-foreground">System Administration - Coming Soon</h1></div>} />
+                    <Route path="/moderation" element={<div className="p-6"><h1 className="text-2xl font-bold text-foreground">Content Moderation - Coming Soon</h1></div>} />
+                    <Route path="/security" element={<div className="p-6"><h1 className="text-2xl font-bold text-foreground">Security - Coming Soon</h1></div>} />
+                    <Route path="/support" element={<div className="p-6"><h1 className="text-2xl font-bold text-foreground">Support - Coming Soon</h1></div>} />
+                    <Route path="/data" element={<div className="p-6"><h1 className="text-2xl font-bold text-foreground">Data Management - Coming Soon</h1></div>} />
+                    <Route path="/integrations" element={<div className="p-6"><h1 className="text-2xl font-bold text-foreground">API & Integration - Coming Soon</h1></div>} />
                     <Route path="*" element={<NotFound />} />
                   </Routes>
                 </main>
